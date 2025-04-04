@@ -14,7 +14,7 @@ public struct Metric {
     public private(set) var aggregationType: AggregationType
     public internal(set) var data = [MetricData]()
 
-    init(namespace: String, name: String, desc: String, type: AggregationType, resource: Resource, instrumentationScopeInfo: InstrumentationScopeInfo) {
+    public init(namespace: String, name: String, desc: String, type: AggregationType, resource: Resource, instrumentationScopeInfo: InstrumentationScopeInfo) {
         self.namespace = namespace
         self.instrumentationScopeInfo = instrumentationScopeInfo
         self.name = name
